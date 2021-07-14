@@ -8,7 +8,7 @@ fn fah_to_cel(choice : u8, deg : f64) -> f64{
     }
 }
 fn main() {
-    println!("Enter choice\n1.) Celsius to Fahrenheit\n2.) Fahrenheit to Celsius");
+    println!("Enter choice\n1.) Fahrenheit to Celsius\n2.) Celsius to Fahrenheit");
     let mut ch = String::new();
     io::stdin().read_line(&mut ch).expect("Error");
     let ch : u8 = match ch.trim().parse(){
